@@ -1,0 +1,365 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5a4ad050-1146-4ab7-bce0-c780e5711e10" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Food Orders</ID>
+  <Name>Dim Food Orders</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1065" scrolltop="-2488" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7329" y="11165" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimFoodOrders" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3942" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000660f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimFoodOrders" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1065</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2488</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="160">
+            <Shape Id="Order SK" Expanded="true">
+              <Attributes>
+                <Attribute Id="Order SK" />
+                <Attribute Id="Alternate Order ID" />
+                <Attribute Id="Order Amount" />
+                <Attribute Id="Order Created Time" />
+                <Attribute Id="Order Delivered Time" />
+                <Attribute Id="Order Delivery Fee" />
+                <Attribute Id="Order Status" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Order Created Year" Expanded="false">
+              <Attributes>
+                <Attribute Id="Order Created Year" />
+              </Attributes>
+              <Position x="225" y="20" />
+            </Shape>
+            <Shape Id="Order Created Month" Expanded="false">
+              <Attributes>
+                <Attribute Id="Order Created Month" />
+              </Attributes>
+              <Position x="225" y="68" />
+            </Shape>
+            <Shape Id="Order Created Day" Expanded="false">
+              <Attributes>
+                <Attribute Id="Order Created Day" />
+              </Attributes>
+              <Position x="225" y="116" />
+            </Shape>
+            <Shape Id="Order Created Minute" Expanded="false">
+              <Attributes>
+                <Attribute Id="Order Created Minute" />
+              </Attributes>
+              <Position x="225" y="164" />
+            </Shape>
+            <Shape Id="Order Created Hour" Expanded="false">
+              <Attributes>
+                <Attribute Id="Order Created Hour" />
+              </Attributes>
+              <Position x="225" y="212" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5b334861-97da-4c7f-bb09-3c320cac45a6">
+    <DataSourceViewID>Food Delivery DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="98839355-6e61-4047-aae3-d410d592ee01">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="776478cd-05eb-4651-8f64-ac3a0c38033f">
+      <ID>Order SK</ID>
+      <Name>Order SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dafeeac0-ec82-4062-88a8-c2cd57e8971d">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7afb023-8f04-43a9-bf2b-cdcb1d77aab1">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>OrderSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="46adb842-e053-4f0c-8a86-fbb92fa988b1">
+          <AttributeID>Alternate Order ID</AttributeID>
+          <Name>Alternate Order ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="054fd7e0-3152-48b1-9d58-d0425e4aeb43">
+          <AttributeID>Order Status</AttributeID>
+          <Name>Order Status</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e67799f-2b82-4d62-8165-a9bb1052a888">
+          <AttributeID>Order Amount</AttributeID>
+          <Name>Order Amount</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dac9a4a0-50b0-44d7-a712-68e664752f5f">
+          <AttributeID>Order Delivery Fee</AttributeID>
+          <Name>Order Delivery Fee</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a23336aa-d091-4bd2-956d-9be05913626f">
+          <AttributeID>Order Created Hour</AttributeID>
+          <Name>Order Created Hour</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be8f7aaa-342f-422f-a709-e45a72b5ee09">
+          <AttributeID>Order Created Minute</AttributeID>
+          <Name>Order Created Minute</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d1d4606c-92da-49f1-9e68-a7e81d84499b">
+          <AttributeID>Order Created Day</AttributeID>
+          <Name>Order Created Day</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="691082c0-7191-4131-bff8-5818055b4996">
+          <AttributeID>Order Created Month</AttributeID>
+          <Name>Order Created Month</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="492a205d-84f6-472e-83fb-676dd346ca2e">
+          <AttributeID>Order Created Year</AttributeID>
+          <Name>Order Created Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80a59980-9c08-4a09-b830-d7994fde6764">
+          <AttributeID>Order Created Time</AttributeID>
+          <Name>Order Created Time</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="073134b1-f73d-4626-93f1-5a0a4bcc9b7d">
+          <AttributeID>Order Delivered Time</AttributeID>
+          <Name>Order Delivered Time</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f2f2702c-0cd0-495c-8abc-ccd64287bc1d">
+      <ID>Alternate Order ID</ID>
+      <Name>Alternate Order ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7884a9c-4cb3-40ca-bd7f-1ada14e3d7cc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37b61971-5079-4bab-876d-4ea1b094a71b">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>AlternateOrderID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="78bdcb7d-66ac-4a80-88f1-5545e2e7624d">
+      <ID>Order Status</ID>
+      <Name>Order Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9e0ccd83-ef47-4cb7-8844-ee3cfcdc43e2">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c926ae4-7275-4da3-a474-2bd042004b3f">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_status</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1b40ba34-f1f4-4474-8688-ecfd82f80751">
+      <ID>Order Amount</ID>
+      <Name>Order Amount</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9de908e6-0c5b-431f-9c26-1dd736191c6a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b11999bd-82d1-49fb-bb00-6328184fe323">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_amount</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="504fa0c5-3d7c-4d3c-9d59-8f536f41919b">
+      <ID>Order Delivery Fee</ID>
+      <Name>Order Delivery Fee</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cef976f8-47ea-4b24-a887-ef8fbe1fd5c1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4d93e98-fc38-4ac5-a1c6-0506e4f5cc06">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_delivery_fee</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="155c4f9c-172a-4d10-aff5-50cb11cbae82">
+      <ID>Order Created Hour</ID>
+      <Name>Order Created Hour</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d6c1b270-d53f-46d1-a6d0-282b6aa37b6f">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cc8d5d7-6140-4ed3-ba6e-81736150af83">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_created_hour</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f3c92ba5-c21f-4df0-83ae-13f65ce96592">
+      <ID>Order Created Minute</ID>
+      <Name>Order Created Minute</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee39f1d5-3218-4dc5-9016-15a1f041de4f">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f36e43f-737e-459f-8937-7d626b479679">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_created_minute</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6cd4aafb-8e47-4e6c-bcf7-746491acd2a4">
+      <ID>Order Created Day</ID>
+      <Name>Order Created Day</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="757727c2-eeba-44dc-b598-2d3cc3414615">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58d770ce-00da-470c-ada4-c5741a20788a">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_created_day</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e33f68c5-9810-4ab5-97e4-3c972afb08a7">
+      <ID>Order Created Month</ID>
+      <Name>Order Created Month</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4dd32a99-96f7-4ca1-b97f-b5fe31895bc4">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99fd8e7f-2a3c-488d-b6c0-0ae15e8d7e86">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_created_month</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="50f5d235-d7ab-4690-9006-0cc2f9e194b6">
+      <ID>Order Created Year</ID>
+      <Name>Order Created Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="17bb5639-5ede-428d-bece-b3e96bd4eda1">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a020bd6-5aef-4c55-9eba-4d92d41d23cd">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_created_year</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0304bf35-47c0-498a-ae2c-e08df715f04a">
+      <ID>Order Created Time</ID>
+      <Name>Order Created Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3416d72e-1df8-4d51-b627-071f74e010c3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c45d5333-4d59-44b1-b2a6-deaee35d38b4">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_created_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce4cd02b-ea49-42ca-8743-056f498645cf">
+      <ID>Order Delivered Time</ID>
+      <Name>Order Delivered Time</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="923dfaaf-7acb-45bc-b0a5-ad0bcfd79ce8">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d3c730d-d503-40b1-98c2-7c9e4be92bf1">
+            <TableID>dbo_DimFoodOrders</TableID>
+            <ColumnID>order_delivered_time</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

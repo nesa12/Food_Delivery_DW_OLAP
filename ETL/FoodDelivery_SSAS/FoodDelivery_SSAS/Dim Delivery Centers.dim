@@ -1,0 +1,376 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9eb390fb-1385-440c-9877-db510c3f7584" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Delivery Centers</ID>
+  <Name>Dim Delivery Centers</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1078" scrolltop="-189" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7329" y="10213" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDeliveryCenters" left="20" top="7242" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3466" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0d000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDeliveryCenters" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimHub" left="178" top="0" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3149" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004d0c0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimHub" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1353" top="4343" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[DimDeliveryCenters-DimHub]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1752" y="4842" />
+              <point x="1752" y="6042" />
+              <point x="1753" y="6042" />
+              <point x="1753" y="7242" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1078</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-189</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c4071350-1730-475a-a430-2265defb14c5">
+    <DataSourceViewID>Food Delivery DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="49f044e3-1c78-46e5-b8aa-610a3f730d37">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="562a6547-89f9-4c92-8873-bfeecfdf35aa">
+      <ID>Center SK</ID>
+      <Name>Center SK</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="50d3764a-1e98-4d74-9520-9bca1d6accb6">
+          <DataType>SmallInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f574d06-1a63-4086-b8c9-85582e549030">
+            <TableID>dbo_DimDeliveryCenters</TableID>
+            <ColumnID>CenterSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="1aac8da2-06c7-435c-a0db-af2c5ff17869">
+          <AttributeID>Alternate Hub ID</AttributeID>
+          <Name>Alternate Hub ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d7d3cfef-59c7-4feb-af5e-a3c1654feea6">
+          <AttributeID>Center Name</AttributeID>
+          <Name>Center Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="701723e8-4315-4b3b-945c-dd811b9cfaff">
+          <AttributeID>Center Segment</AttributeID>
+          <Name>Center Segment</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e2ef42c2-7266-40e2-a942-c6bd6565d0c6">
+          <AttributeID>Center Plan Price</AttributeID>
+          <Name>Center Plan Price</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cef15503-c69a-4c76-acc5-ab5d1ec837e4">
+          <AttributeID>Hub Name</AttributeID>
+          <Name>Hub Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="00478ef7-9b89-43aa-866c-228e8dccfcbc">
+          <AttributeID>Hub City</AttributeID>
+          <Name>Hub City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="50bbf86b-a211-4d6c-9ef4-8d35a29b2d79">
+          <AttributeID>Hub State</AttributeID>
+          <Name>Hub State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e1dae50-418d-4a05-8d61-a78aa07d7ced">
+          <AttributeID>Hub Latitude</AttributeID>
+          <Name>Hub Latitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9bcee0d7-0e5f-4947-b2b3-bc938f3fec67">
+          <AttributeID>Hub Longitude</AttributeID>
+          <Name>Hub Longitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d2ed41d6-16e5-4eba-9d56-381f4af21a92">
+          <AttributeID>Hub SK</AttributeID>
+          <Name>Hub SK</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8e1687ba-73c4-4ae1-a1cf-f2db07f186ee">
+      <ID>Alternate Hub ID</ID>
+      <Name>Alternate Hub ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="985e6eee-1134-4548-9191-205821b3a620">
+          <DataType>UnsignedTinyInt</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="109c7c74-c1ad-42fc-a325-095b5fd6a075">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>AlternateHubID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abb91779-e422-4d87-86e4-19a2d4641a01">
+      <ID>Center Name</ID>
+      <Name>Center Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="530ab93e-22b1-48e3-af4e-458a1b7de140">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="676420eb-cd82-45d6-accf-4f2ac85daf17">
+            <TableID>dbo_DimDeliveryCenters</TableID>
+            <ColumnID>center_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="40af9391-1e16-45f7-9afd-a6c2f681f3ed">
+      <ID>Center Segment</ID>
+      <Name>Center Segment</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb34504a-6b29-4017-a8b1-4aad3fd0eec8">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="16f1f621-8fd0-42b2-8115-66541a94abb8">
+            <TableID>dbo_DimDeliveryCenters</TableID>
+            <ColumnID>center_segment</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dad15854-5988-4a72-af2a-54d6d1a86fc1">
+      <ID>Center Plan Price</ID>
+      <Name>Center Plan Price</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed86bf78-b10b-4435-8957-98e78b690782">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ac53614-fb67-4411-8022-d6d950ad5f17">
+            <TableID>dbo_DimDeliveryCenters</TableID>
+            <ColumnID>center_plan_price</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac6f82be-cd1c-47f2-8d6a-770cad6c8269">
+      <ID>Hub Name</ID>
+      <Name>Hub Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e3438634-ce8e-4e84-8cc1-b699a1e49f1a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f50ff8f2-2d4b-428c-8846-e5f91e28a280">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>hub_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d0c638f-e5c2-4f43-a3ac-63ff1bbb3a94">
+      <ID>Hub City</ID>
+      <Name>Hub City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="12eecfa9-8268-43df-8e0f-d35369405ab1">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca4dd1f8-0c99-4883-8b56-3118687747f4">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>hub_city</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c80b1d4f-17a4-47a5-841d-14a925b4cb46">
+      <ID>Hub State</ID>
+      <Name>Hub State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1b6399f-b991-4371-893a-7aff491b06bb">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e145b2b-6e24-4fd9-9f5b-a65715fb7102">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>hub_state</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6f0bea25-840d-4aeb-a28b-97e4ba555014">
+      <ID>Hub Latitude</ID>
+      <Name>Hub Latitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="01112df8-ee7f-4447-948f-e4387e149c05">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a88e06a-0aeb-45d0-93f2-ba07bd430f05">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>hub_latitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e9460b8-9b47-4c35-8318-a1c98425d12c">
+      <ID>Hub Longitude</ID>
+      <Name>Hub Longitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc464375-a426-4b23-9bea-84a719c3a046">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1804223d-089a-4d25-b52d-ffd11880e23f">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>hub_longitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9aa24078-9bad-43b7-80a4-d1bddbb44fc1">
+      <ID>Hub SK</ID>
+      <Name>Hub SK</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="00a1348c-4b3a-4ca6-978c-494bff644881">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="276e73cd-edfd-4ab2-b301-32896c3c689e">
+            <TableID>dbo_DimHub</TableID>
+            <ColumnID>HubSK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="6f3434f3-c619-4426-a444-adb93e2d2518">
+      <ID>Hierarchy</ID>
+      <Name>CityHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="38b536f6-32b9-4d67-810e-3649b48a63bf">
+          <ID>Hub State</ID>
+          <Name>Hub State</Name>
+          <SourceAttributeID>Hub State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1946f1cc-76ec-4176-894c-bdc3671118c0">
+          <ID>Hub City</ID>
+          <Name>Hub City</Name>
+          <SourceAttributeID>Hub City</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="277f7ba7-9f8d-444f-abb0-d170b80cfaaa">
+      <ID>Hierarchy 1</ID>
+      <Name>LocationHierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="dedacd28-5130-48be-863a-720955fcfad6">
+          <ID>Hub State</ID>
+          <Name>Hub State</Name>
+          <SourceAttributeID>Hub State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="4ad55fb8-25a5-4e08-9961-c27118450784">
+          <ID>Hub City</ID>
+          <Name>Hub City</Name>
+          <SourceAttributeID>Hub City</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f36932df-80fa-4abd-882f-71d5f82e5d1d">
+          <ID>Hub Latitude</ID>
+          <Name>Hub Latitude</Name>
+          <SourceAttributeID>Hub Latitude</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="2a4ca666-aa3b-4c7b-95fa-c85a4fd89226">
+          <ID>Hub Longitude</ID>
+          <Name>Hub Longitude</Name>
+          <SourceAttributeID>Hub Longitude</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

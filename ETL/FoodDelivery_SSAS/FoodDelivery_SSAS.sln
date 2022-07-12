@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1831
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "FoodDelivery_SSAS", "FoodDelivery_SSAS\FoodDelivery_SSAS.dwproj", "{3DB2D75D-9449-49BA-85AB-02A2E8617E37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3DB2D75D-9449-49BA-85AB-02A2E8617E37}.Development|Default.ActiveCfg = Development
+		{3DB2D75D-9449-49BA-85AB-02A2E8617E37}.Development|Default.Build.0 = Development
+		{3DB2D75D-9449-49BA-85AB-02A2E8617E37}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A4B1D6A-985F-411A-A205-2871A7BB7210}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>DS_Food_Delivery_DW</Id>
+            <Name>DS_Food_Delivery_DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA49ohriKzz0ONySXHe+ZNGgAAAAAoAAAARABTAF8ARgBvAG8AZABfAEQAZQBsAGkAdgBlAHIAeQBfAEQAVwAAABBmAAAAAQAAIAAAAJBZXRypftYzWeazNMahJl94hFlTNJq3ycSK0S43rXxNAAAAAA6AAAAAAgAAIAAAAIl7lr8dl+IhXAIEa1gxataAqvuQlTmaVf3o98VI2aDwEAAAAH8fcHgBYkPDNY1TRktU5Y9AAAAAg9m0sgwn5QtgC1rH9EjUUyNcy8M3APYHbc9OjQVMvL1FadFXKNeNe/FgKChAFQ3E78hAv/iEkYh2KXUxBL7hZg==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>DS_Food_Delivery_DW</Id>
+            <Name>DS_Food_Delivery_DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA49ohriKzz0ONySXHe+ZNGgAAAAAoAAAARABTAF8ARgBvAG8AZABfAEQAZQBsAGkAdgBlAHIAeQBfAEQAVwAAABBmAAAAAQAAIAAAAOHNp7jANS/H7sJIsRIMyKsuJA/nSd/6akWMPfXZTXaSAAAAAA6AAAAAAgAAIAAAADg3Rtmkov8TEGISlJlne863SK7GFJDGaeR88DSHFrtqIAAAAGMgcKE1/pkSESnXHn/mUc/azvJ9GDBLDMtMapuZqu3NQAAAAIeFSJsfkuzc28QyQ5Tggx3AbUviW8Kmzdc/kYkcMd4fFJD0EXY9GZd137RKTX8+Ll8Ud+j45VZdFTGmRBV2F5c=</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>DESKTOP-OHUB83N\MSSQLSERVER1</TargetServer>
+        <TargetDatabase>FoodDelivery_SSAS</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>
